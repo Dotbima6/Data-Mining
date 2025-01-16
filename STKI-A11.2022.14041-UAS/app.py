@@ -2,8 +2,13 @@ import streamlit as st
 import pickle
 import numpy as np
 
-# Load model
-with open("model.pkl", "rb") as file:
+import os
+
+# Mendapatkan path absolut
+current_dir = os.path.dirname(os.path.abspath(_file_))
+model_path = os.path.join(current_dir, "model.pkl")
+
+with open(model_path, "rb") as file:
     model = pickle.load(file)
 
 # Judul Aplikasi
