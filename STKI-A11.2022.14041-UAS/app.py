@@ -6,8 +6,13 @@ import numpy as np
 import os
 
 # Load the dataset
-data_file = 'https://raw.githubusercontent.com/Dotbima6/Data-Mining/blob/main/STKI-A11.2022.14041-UAS/heart.csv'
+# URL raw file CSV
+data_file = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/data.csv"
+
+# Membaca file CSV
 data = pd.read_csv(data_file)
+print(data.head())
+
 
 # Judul Aplikasi
 st.title("Aplikasi Prediksi Kemungkinan Penyakit Jantung")
