@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
+import urllib.request
 
 import os
 
@@ -13,8 +14,12 @@ data_file = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A1
 data = pd.read_csv(data_file)
 print(data.head())
 
-with open("https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/model.pkl", "rb") as file:
-    model = pickle.load(file)
+# URL file model.pkl
+url = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/model.pkl"
+
+# Unduh dan buka file .pkl dari URL
+with urllib.request.urlopen(url) as response:
+    model = pickle.load(response)
 
 # Judul Aplikasi
 st.title("Aplikasi Prediksi Kemungkinan Penyakit Jantung")
