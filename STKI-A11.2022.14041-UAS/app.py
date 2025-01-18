@@ -7,7 +7,7 @@ import os
 
 # Load the dataset
 # URL raw file CSV
-data_file = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/data.csv"
+data_file = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/heart.csv"
 
 # Membaca file CSV
 data = pd.read_csv(data_file)
