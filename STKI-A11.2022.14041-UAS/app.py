@@ -6,7 +6,7 @@ import numpy as np
 import os
 
 # Load the dataset
-data_file = 'https://raw.githubusercontent.com/rickyarnold/DataMining/main/STKI-A11.2022.14010-UAS/heart.csv'
+data_file = 'https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14010-UAS/heart.csv'
 data = pd.read_csv(data_file)
 
 # Judul Aplikasi
