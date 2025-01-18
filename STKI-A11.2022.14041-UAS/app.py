@@ -13,7 +13,7 @@ data_file = "https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A1
 data = pd.read_csv(data_file)
 print(data.head())
 
-with open("model.pkl", "rb") as file:
+with open("https://raw.githubusercontent.com/Dotbima6/Data-Mining/main/STKI-A11.2022.14041-UAS/model.pkl", "rb") as file:
     model = pickle.load(file)
 
 # Judul Aplikasi
