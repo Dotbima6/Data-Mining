@@ -4,12 +4,9 @@ import numpy as np
 
 import os
 
-# Mendapatkan path absolut
-current_dir = os.path.dirname(os.path.abspath(_file_))
-model_path = os.path.join(current_dir, "model.pkl")
-
-with open(model_path, "rb") as file:
-    model = pickle.load(file)
+# Load the dataset
+data_file = 'https://raw.githubusercontent.com/Dotbima6/Data-Mining/edit/main/STKI-A11.2022.14041-UAS/heart.csv'
+data = pd.read_csv(data_file)
 
 # Judul Aplikasi
 st.title("Aplikasi Prediksi Kemungkinan Penyakit Jantung")
